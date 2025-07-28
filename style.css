@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #0d0d0d, #1a1a1a);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background-color: #111;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-3d {
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: 'Segoe UI Black', 'Arial Black', sans-serif;
+  color: rgba(220, 20, 60, 0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 0.5rem 1rem;
+  background:
+    repeating-radial-gradient(circle at 10% 50%, rgba(255, 215, 0, 0.6) 0 2px, transparent 2px 6px),
+    repeating-linear-gradient(45deg, rgba(255, 215, 0, 0.4) 0 1px, transparent 1px 4px),
+    linear-gradient(90deg, #b22222, #8b0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    0 0 5px rgba(255, 215, 0, 0.8),
+    0 0 10px rgba(255, 215, 0, 0.7),
+    0 0 20px rgba(255, 215, 0, 0.6),
+    2px 2px 3px rgba(0,0,0,0.7),
+    4px 4px 5px rgba(0,0,0,0.6);
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.6));
+  user-select: none;
+  cursor: default;
+  transition: transform 0.3s ease;
+}
+
+.logo-3d:hover {
+  transform: scale(1.1) rotateY(15deg);
+  filter: drop-shadow(4px 4px 8px rgba(0,0,0,0.9));
+}
+
+.btn-idioma {
+  background-color: transparent;
+  border: 2px solid #ffd700;
+  color: #ffd700;
+  padding: 0.4rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-idioma:hover {
+  background-color: #ffd700;
+  color: #111;
+}
+
+.menu {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu button {
+  background-color: #222;
+  color: #ffd700;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+  background-color: #ffd700;
+  color: #111;
+}
+
+.oculto {
+  display: none;
+}
+
+section {
+  margin: 1rem 0;
+  width: 90%;
+  max-width: 600px;
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+textarea {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  resize: vertical;
+}
+
+button.hablar-btn {
+  margin-top: 1rem;
+  background-color: #8b0000;
+  border: none;
+  color: #ffd700;
+  font-weight: bold;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button.hablar-btn:hover {
+  background-color: #b22222;
+}
+
+#estado-microfono {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
